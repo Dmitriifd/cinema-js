@@ -36,7 +36,7 @@ const firstRender = (data, [key = null] ) => {
 const renderVideo = async () => {
   const data = await getTrends()
   const [firstCard, ...otherCard] = data.results
-  otherCard.length = 16
+  otherCard.length = 16;
 
   const video = await getVideo(firstCard.id, firstCard.media_type)
 
