@@ -1,4 +1,6 @@
 import slideMenu from './menu.js';
+import renderVideo from './renderVideo.js';
+
 
 
 slideMenu({
@@ -9,7 +11,3 @@ slideMenu({
 });
 
 renderVideo();
-menuLink();
-search();
-
-const API_KEY = 'f8d3320331781f06af992a4baca9fdf2';

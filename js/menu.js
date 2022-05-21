@@ -4,7 +4,6 @@ const slideMenu = ({ openBtn, menu, classActiveMenu, closeTrigger }) => {
 	const navigationClose = document.querySelectorAll(closeTrigger);
 
 	const closeMenu = (e) => {
-		console.log(1);
 		if (e._nav || (e.target.closest(menu) && !e.target.closest(closeTrigger)))
 			return;
 
@@ -14,7 +13,7 @@ const slideMenu = ({ openBtn, menu, classActiveMenu, closeTrigger }) => {
 		document.removeEventListener('click', closeMenu);
 		document.removeEventListener('keydown', closeMenu);
 	};
-
+    
 	burgerBtn.addEventListener('click', (e) => {
 		navigation.classList.add(classActiveMenu);
 		e._nav = true;
