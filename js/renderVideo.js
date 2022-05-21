@@ -11,8 +11,8 @@ const firstRender = (data, [key = null] ) => {
     title,
     original_name,
     original_title
-  } = data
-  console.log('key = ', key)
+  } = data;
+
   filmWeek.innerHTML = `
      <div class="container film-week__container" data-rating="${vote_average}">
          <div class="film-week__poster-wrapper">
